@@ -1,1 +1,302 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBAL */
+
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Segoe UI;
+    scroll-behavior: smooth;
+}
+
+
+.custom-navbar {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 22px;
+    color: #38bdf8 !important;
+}
+
+.nav-hover {
+    color: #cbd5f5 !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-hover:hover {
+    color: #38bdf8 !important;
+}
+
+
+/* HERO */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-left {
+    max-width: 550px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.hero-subtitle {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.hero-text {
+    margin-top: 20px;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+
+.btn-main {
+    background: #38bdf8;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* Outline / Resume Button */
+.btn-outline-main {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: #38bdf8;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline-main:hover {
+    background: #38bdf8;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+.profile-img {
+    width: 260px;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+}
+
+
+/* SECTIONS */
+
+.section-dark {
+    padding: 90px 0;
+    background: #020617;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #94a3b8;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* SKILLS */
+
+.skill-card {
+    background: #0f172a;
+    height: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.skill-desc {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 6px;
+}
+
+
+/* PROJECTS */
+
+.project-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-label {
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #1e293b;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.project-buttons {
+    margin-top: 15px;
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT */
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: white;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #020617;
+    padding: 60px 0;
+}
+
+.footer-title {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    color: #94a3b8;
+}
+
+
+.nav-link.nav-hover {
+    color: #94a3b8;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link.nav-hover:hover {
+    color: #38bdf8;
+    /* blue on hover */
+}
+
+/* Footer hover links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a.footer-link {
+    text-decoration: none;
+    color: #94a3b8;
+    cursor: pointer;
+    /* pointer cursor */
+    font-weight: 400;
+    /* normal weight */
+    transition: color 0.3s ease;
+}
+
+.footer-links a.footer-link:hover {
+    color: #38bdf8;
+    /* blue hover */
+}
+
+.social-icons a {
+    font-size: 22px;
+    margin-right: 15px;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38bdf8;
+    transform: translateY(-4px);
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+}
